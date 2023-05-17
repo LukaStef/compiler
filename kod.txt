@@ -1,0 +1,403 @@
+-----Ovde se cuva kod-----
+
+
+
+
+26/01/2023 10:53:30
+
+Write('Hello World');
+
+-kraj
+
+26/01/2023 11:01:06
+
+Help('Help');
+WriteLine('');
+Help('Write');
+WriteLine('');
+Help('WriteLine');
+WriteLine('');
+Help('WriteFor');
+WriteLine('');
+Help('WriteLineFor');
+WriteLine('');
+Help('BinConvert');
+WriteLine('');
+Help('OctConvert');
+WriteLine('');
+Help('HexConvert');
+WriteLine('');
+Help('Pow');
+WriteLine('');
+Help('Sqrt');
+WriteLine('');
+Help('Fact');
+WriteLine('');
+Help('Random');
+WriteLine('');
+Help('Log');
+WriteLine('');
+Help('Count');
+WriteLine('');
+Help('Remove');
+WriteLine('');
+Help('RemoveCount');
+WriteLine('');
+Help('Append');
+WriteLine('');
+Help('Ascii');
+WriteLine('');
+Help('Back');
+WriteLine('');
+Help('BackLine');
+WriteLine('');
+Help('ToUpper');
+WriteLine('');
+Help('ToLower');
+WriteLine('');
+Help('Wait');
+WriteLine('');
+Help('Clear');
+WriteLine('');
+
+-kraj
+
+26/01/2023 11:03:50
+
+Write('2+2 je ');
+Wait(500);
+Write('. ');
+Wait(500);
+Write('. ');
+Wait(500);
+Write('. ');
+Wait(1000);
+Write(2+2);
+
+-kraj
+
+26/01/2023 13:28:08
+
+Write('Tekst nestaje za 3');
+Wait(1000);
+Clear('');
+Write('Tekst nestaje za 2');
+Wait(1000);
+Clear('');
+Write('Tekst nestaje za 1');
+Wait(1000);
+Clear('');
+Write('POOF');
+Wait(500);
+Clear('');
+
+-kraj
+
+27/01/2023 11:32:12
+
+WriteLine('-Demonstracija jezika-');WriteLine('');
+WriteLineFor('Ovaj tekst se ispisuje 3 puta&3');WriteLine('');
+WriteFor('Ovaj tekst se ispisuje 2 puta u istom redu&2');WriteLine('');WriteLine('');
+Write('4+5-2*3 je ');Write(4+5-2*3);WriteLine('');WriteLine('');
+Write('45 u binarnom obliku je ');BinConvert(45);WriteLine('');
+Write('45 u oktalnom obliku je ');OctConvert(40+5);WriteLine('');
+Write('45 u heksadecimalnom obliku je ');HexConvert(9*5);WriteLine('');WriteLine('');
+Write('4 na 3 je ');Pow(3+1&2+1);WriteLine('');
+Write('Koren od 64 je ');Sqrt(60+4);WriteLine('');
+Write('Faktorijal od 5 je ');Fact(5);WriteLine('');
+Write('Nasumican broj izmedju 1 i 1000: ');Random(1&1000);WriteLine('');
+Write('Logaritam od 8 na bazi 2');Log(8&2);WriteLine('');WriteLine('');
+Write(''Hello World' ima ');Count('Hello World');Write(' karaktera');WriteLine('');
+Write(''Hello World' bez World je ');Remove('Hello World'&'World');WriteLine('');
+Write(''Hello World' bez prvih 6 karaktera je ');RemoveCount('Hello World'&6);WriteLine('');
+Write(''Hello' sa nadovezanim 'World' je ');Append('Hello'&' World');WriteLine('');
+Write('ASCII kod od H je ');Ascii('H');WriteLine('');
+Write('Hello world ispisano unazad je ');Back('Hello World');
+Write(''Hello World' samo u velikim slovima je ');ToUpper('Hello World');
+Write(' a sa malim je ');ToLower('Hello World');
+MsgBox('Sve radi'&'Naslov');
+
+-kraj
+
+27/01/2023 13:41:37
+
+%var jedan='jedan';
+%var dva='dva';
+%var prva=2-1;
+%var druga=2;
+ShowVar('');
+
+-kraj
+
+27/01/2023 14:18:38
+
+%string pr='Radi!';
+Write(%pr);
+
+-kraj
+
+27/01/2023 18:10:24
+
+%string recenica='2 + 2 je: ';
+%expr izraz=2+2;
+Write(%recenica);Write(%izraz);
+
+-kraj
+
+27/01/2023 18:35:19
+
+%expr a=10+6;
+Sqrt(%a);
+
+-kraj
+
+27/01/2023 18:36:14
+
+%string p='Hello ';
+%string d='World';
+Write(%p);Write(%d);
+
+-kraj
+
+27/01/2023 18:38:12
+
+%expr a=3+2;
+Fact(%a);
+
+-kraj
+
+
+27/01/2023 22:34:38
+
+%expr a=1000;
+%string b='Hello World';
+Wait(%a);
+Write(%b);
+
+-kraj
+
+28/01/2023 09:31:33
+
+WriteLineFor('010001110010101010001110010100100011100101010100011100101011010001110010101010001110010101010001110010101&2');
+WriteLineFor('010001110010101010001110010101010001110010101010001110010010001110010101010001110010101101010001110010101&2');
+WriteLineFor('010001110010101010001110010100100011100101010100011100101011010001110010101010001110010101010001110010101&2');
+WriteLineFor('010001110010101010001110010001110010101010001110001000111001010101000111001010110101010101010001110010101&2');
+WriteLineFor('010001110010101010001110010101000100011100101010100011100101010111001010101000111001010101010001110010101&2');
+WriteLineFor('010001110010101010001010001110100011100101010100011100101010010101010001110010101110010101010001110010101&2');
+
+-kraj
+
+28/01/2023 17:16:47
+
+%var a='aaaa';
+Write(%a);
+%assign a='bbbbb';
+Write(%a);
+
+-kraj
+
+28/01/2023 17:19:32
+
+%var a='aaaa';
+WriteLine(%a);
+%assign a=2+2;
+Write(%a);
+
+-kraj
+
+28/01/2023 17:30:46
+
+%var a='2+2 je ';
+Write(%a);
+%assign a=2+2;
+Write(%a);
+
+-kraj
+
+28/01/2023 18:26:38
+
+Write('2+2 je ');
+Wait(500);
+WriteDelay('. . . &300');
+Wait(300);
+Write(2+2);
+
+-kraj
+
+28/01/2023 18:30:13
+
+WriteDelay('H e l l o  W o r l d&300');
+WriteLine('');
+WriteLineDelay('ello World&300');
+
+-kraj
+
+29/01/2023 21:55:19
+
+WriteDelay('2+2 je &30');
+Wait(500);
+WriteDelay('. . . &300');
+Wait(300);
+Write(2+2);
+
+-kraj
+
+30/01/2023 20:02:47
+
+WriteLine('-Demonstracija jezika-');WriteLine('');
+WriteLineFor('Ovaj tekst se ispisuje 3 puta'&3);WriteLine('');
+WriteFor('Ovaj tekst se ispisuje 2 puta u istom redu'&2);WriteLine('');WriteLine('');
+Write('4+5-2*3 je ');Write(4+5-2*3);WriteLine('');WriteLine('');
+Write('45 u binarnom obliku je ');BinConvert(45);WriteLine('');
+Write('45 u oktalnom obliku je ');OctConvert(40+5);WriteLine('');
+Write('45 u heksadecimalnom obliku je ');HexConvert(9*5);WriteLine('');WriteLine('');
+Write('4 na 3 je ');Pow(3+1&2+1);WriteLine('');
+Write('Koren od 64 je ');Sqrt(60+4);WriteLine('');
+Write('Faktorijal od 5 je ');Fact(5);WriteLine('');
+Write('Nasumican broj izmedju 1 i 1000: ');Random(1&1000);WriteLine('');
+Write('Logaritam od 8 na bazi 2');Log(8&2);WriteLine('');WriteLine('');
+Write(''Hello World' ima ');Count('Hello World');Write(' karaktera');WriteLine('');
+Write(''Hello World' bez World je ');Remove('Hello World'&'World');WriteLine('');
+Write(''Hello World' bez prvih 6 karaktera je ');RemoveCount('Hello World'&6);WriteLine('');
+Write(''Hello' sa nadovezanim 'World' je ');Append('Hello'&' World');WriteLine('');
+Write('ASCII kod od H je ');Ascii('H');WriteLine('');
+Write('Hello world ispisano unazad je ');Back('Hello World');
+Write(''Hello World' samo u velikim slovima je ');ToUpper('Hello World');
+Write(' a sa malim je ');ToLower('Hello World');
+MsgBox('Sve radi'&'Naslov');
+
+-kraj
+
+30/01/2023 20:41:58
+
+%var a='2+2 je ';
+%var b=2+2;
+%var c=' a 2*3 je ';
+Write(%a&%b&%c);
+%assign b=2*3;
+Write(%b);
+
+-kraj
+
+30/01/2023 22:31:35
+
+%var a='Tekst ';
+%var b=2+2+2;
+Write(%a&%b&' Tekst '&2+2);
+
+-kraj
+
+31/01/2023 13:58:25
+
+WriteLine('-Demonstracija jezika-');WriteLine('');
+WriteLineFor('Ovaj tekst se ispisuje 3 puta'&3);WriteLine('');
+WriteFor('Ovaj tekst se ispisuje 2 puta u istom redu'&2);WriteLine('');WriteLine('');
+Write('4+5-2*3 je '&4+5-2*3);WriteLine('');WriteLine('');
+Write('45 u binarnom obliku je ');BinConvert(45);WriteLine('');
+Write('45 u oktalnom obliku je ');OctConvert(40+5);WriteLine('');
+Write('45 u heksadecimalnom obliku je ');HexConvert(9*5);WriteLine('');WriteLine('');
+Write('4 na 3 je ');Pow(3+1&2+1);WriteLine('');
+Write('Koren od 64 je ');Sqrt(60+4);WriteLine('');
+Write('Faktorijal od 5 je ');Fact(5);WriteLine('');
+Write('Nasumican broj izmedju 1 i 1000: ');Random(1&1000);WriteLine('');
+Write('Logaritam od 8 na bazi 2');Log(8&2);WriteLine('');WriteLine('');
+Write(''Hello World' ima ');Count('Hello World');Write(' karaktera');WriteLine('');
+Write(''Hello World' bez World je ');Remove('Hello World'&'World');WriteLine('');
+Write(''Hello World' bez prvih 6 karaktera je ');RemoveCount('Hello World'&6);WriteLine('');
+Write(''Hello' sa nadovezanim 'World' je ');Append('Hello'&' World');WriteLine('');
+Write('ASCII kod od H je ');Ascii('H');WriteLine('');
+Write('Hello world ispisano unazad je ');Back('Hello World');
+Write(''Hello World' samo u velikim slovima je ');ToUpper('Hello World');
+Write(' a sa malim je ');ToLower('Hello World');
+MsgBox('Sve radi'&'Naslov');
+
+-kraj
+
+31/01/2023 22:39:45
+
+WriteLine('-Demonstracija jezika-');WriteLine('');
+WriteLineFor('Ovaj tekst se ispisuje 3 puta'&3);WriteLine('');
+WriteFor('Ovaj tekst se ispisuje 2 puta u istom redu'&2);WriteLine('');WriteLine('');
+Write('4+5-2*3 je '&4+5-2*3);WriteLine('');WriteLine('');
+Write('45 u binarnom obliku je ');BinConvert(45);WriteLine('');
+Write('45 u oktalnom obliku je ');OctConvert(40+5);WriteLine('');
+Write('45 u heksadecimalnom obliku je ');HexConvert(9*5);WriteLine('');WriteLine('');
+Write('4 na 3 je ');Pow(3+1&2+1);WriteLine('');
+Write('Koren od 64 je ');Sqrt(60+4);WriteLine('');
+Write('Faktorijal od 5 je ');Fact(5);WriteLine('');
+Write('Nasumican broj izmedju 1 i 1000: ');Random(1&1000);WriteLine('');
+Write('Logaritam od 8 na bazi 2');Log(8&2);WriteLine('');WriteLine('');
+Write(''Hello World' ima ');Count('Hello World');Write(' karaktera');WriteLine('');
+Write(''Hello World' bez World je ');Remove('Hello World'&'World');WriteLine('');
+Write(''Hello World' bez prvih 6 karaktera je ');RemoveCount('Hello World'&6);WriteLine('');
+Write('ASCII kod od H je ');Ascii('H');WriteLine('');
+Write('Hello world ispisano unazad je ');Back('Hello World');
+Write(''Hello World' samo u velikim slovima je ');ToUpper('Hello World');
+Write(' a sa malim je ');ToLower('Hello World');
+MsgBox('Sve radi'&'Naslov');
+
+-kraj
+
+01/02/2023 19:14:56
+
+Write('2+2='&2+2&'#t2*2='&2*2&'#n2-2='&2-2);
+
+-kraj
+
+01/02/2023 19:15:24
+
+Write('2+2='&2+2
+&'#t2*2='&2*2
+&'#n2-2='&2-2);
+
+-kraj
+
+02/02/2023 19:01:44
+
+WriteLine('-Demonstracija jezika-');WriteLine('');
+WriteLineFor('Ovaj tekst se ispisuje 3 puta'&3);WriteLine('');
+WriteFor('Ovaj tekst se ispisuje 2 puta u istom redu'&2);WriteLine('');WriteLine('');
+Write('4+5-2*3 je '&4+5-2*3);WriteLine('');WriteLine('');
+Write('45 u binarnom obliku je ');BinConvert(45);WriteLine('');
+Write('45 u oktalnom obliku je ');OctConvert(40+5);WriteLine('');
+Write('45 u heksadecimalnom obliku je ');HexConvert(9*5);WriteLine('');WriteLine('');
+Write('4 na 3 je ');Pow(3+1&2+1);WriteLine('');
+Write('Cetvrti koren od 16 je ');Root(10+6&3+1);WriteLine('');
+Write('Faktorijal od 5 je ');Fact(5);WriteLine('');
+Write('Nasumican broj izmedju 1 i 1000: ');Random(1&1000);WriteLine('');
+Write('Logaritam od 8 na bazi 2');Log(8&2);WriteLine('');WriteLine('');
+Write(''Hello World' ima ');Count('Hello World');Write(' karaktera');WriteLine('');
+Write(''Hello World' bez World je ');Remove('Hello World'&'World');WriteLine('');
+Write(''Hello World' bez prvih 6 karaktera je ');RemoveCount('Hello World'&6);WriteLine('');
+Write('ASCII kod od H je ');Ascii('H');WriteLine('');
+Write('Hello world ispisano unazad je ');Back('#nHello World');
+Write(''Hello World' samo u velikim slovima je ');ToUpper('Hello World');
+Write(' a sa malim je ');ToLower('Hello World');
+MsgBox('Sve radi'&'Naslov');
+
+-kraj
+
+02/02/2023 19:08:35
+
+WriteLine('-Demonstracija promenljivih-');
+%var a='Ovo je string';
+%var b='ovo je takodje string';
+WriteLine(%a&' i '&%b);
+%var c='2+2';
+%var d=2+2;
+Write('Promenljiva a '&%c&' je string dok je promenljiva b '&%d&' resenje od 2+2');
+
+-kraj
+
+02/02/2023 19:49:37
+
+WriteLine('-Demonstracija promenljivih-');
+%var a='Ovo je string';
+%var b='ovo je takodje string';
+WriteLine(%a&' i '&%b);
+%assign a='2+2';
+%assign b=2+2;
+Write('Promenljiva a '&%a&' je string dok je promenljiva b '&%b&' resenje od 2+2');
+
+-kraj
+
