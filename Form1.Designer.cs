@@ -38,8 +38,8 @@
             this.verzijaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.fajlToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.otvoriFajlToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.sacuvajKodToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.sačuvajToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.sacuvajKodToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.definicijeToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.otvoriToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.uputstvoToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
@@ -159,16 +159,6 @@
             this.otvoriFajlToolStripMenuItem.Text = "Otvori fajl";
             this.otvoriFajlToolStripMenuItem.Click += new System.EventHandler(this.otvoriFajlToolStripMenuItem_Click);
             // 
-            // sacuvajKodToolStripMenuItem
-            // 
-            this.sacuvajKodToolStripMenuItem.Image = ((System.Drawing.Image)(resources.GetObject("sacuvajKodToolStripMenuItem.Image")));
-            this.sacuvajKodToolStripMenuItem.Name = "sacuvajKodToolStripMenuItem";
-            this.sacuvajKodToolStripMenuItem.ShortcutKeys = ((System.Windows.Forms.Keys)(((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.Shift) 
-            | System.Windows.Forms.Keys.S)));
-            this.sacuvajKodToolStripMenuItem.Size = new System.Drawing.Size(208, 22);
-            this.sacuvajKodToolStripMenuItem.Text = "Sačuvaj kao";
-            this.sacuvajKodToolStripMenuItem.Click += new System.EventHandler(this.sacuvajKodToolStripMenuItem_Click);
-            // 
             // sačuvajToolStripMenuItem
             // 
             this.sačuvajToolStripMenuItem.Enabled = false;
@@ -178,6 +168,16 @@
             this.sačuvajToolStripMenuItem.Size = new System.Drawing.Size(208, 22);
             this.sačuvajToolStripMenuItem.Text = "Sačuvaj";
             this.sačuvajToolStripMenuItem.Click += new System.EventHandler(this.sačuvajToolStripMenuItem_Click);
+            // 
+            // sacuvajKodToolStripMenuItem
+            // 
+            this.sacuvajKodToolStripMenuItem.Image = ((System.Drawing.Image)(resources.GetObject("sacuvajKodToolStripMenuItem.Image")));
+            this.sacuvajKodToolStripMenuItem.Name = "sacuvajKodToolStripMenuItem";
+            this.sacuvajKodToolStripMenuItem.ShortcutKeys = ((System.Windows.Forms.Keys)(((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.Shift) 
+            | System.Windows.Forms.Keys.S)));
+            this.sacuvajKodToolStripMenuItem.Size = new System.Drawing.Size(208, 22);
+            this.sacuvajKodToolStripMenuItem.Text = "Sačuvaj kao";
+            this.sacuvajKodToolStripMenuItem.Click += new System.EventHandler(this.sacuvajKodToolStripMenuItem_Click);
             // 
             // definicijeToolStripMenuItem
             // 
@@ -286,7 +286,7 @@
             this.MinimumSize = new System.Drawing.Size(897, 897);
             this.Name = "Form1";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "LPPL Compiler - Untitled.lppl";
+            this.Text = "LPPL Compiler";
             this.menuStrip1.ResumeLayout(false);
             this.menuStrip1.PerformLayout();
             this.ResumeLayout(false);

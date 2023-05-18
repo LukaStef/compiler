@@ -158,7 +158,7 @@ namespace compiler
                                     Refresh();
                                 }
                                 break;
-                            case "WriteLineDelay": //ispisuje slovo po slovo i dodaje novi red posle svakog slova
+                            case "WriteLineDelay": //ispisuje slovo po slovo i dodaje novi red
                                 for (int b = 0; b < argument[0].Length; b++)
                                 {
                                     richTextBox2.Text += argument[0][b];
@@ -209,7 +209,22 @@ namespace compiler
                             if (prIme.Contains(ime)) //ako promenljiva postoji
                             {
                                 int ind = prIme.IndexOf(ime);
-                                vred = Parsiranje(vred);
+                                if (vred.Contains('&'))
+                                {
+                                    string vredTemp = "";
+                                    string[] podela = vred.Split('&');
+                                    for (int j = 0; j < podela.Length; j++)
+                                    {
+                                        string subArgument = podela[j];
+                                        subArgument = Parsiranje(subArgument);
+                                        vredTemp += subArgument;
+                                    }
+                                    vred = vredTemp;
+                                }
+                                else
+                                {
+                                    vred = Parsiranje(vred);
+                                }
                                 prVred[ind] = vred;
                             }
                             else
