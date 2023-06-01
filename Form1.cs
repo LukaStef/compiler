@@ -9,6 +9,8 @@ namespace compiler
         {
             InitializeComponent();
         }
+        //napravljeno: 20.01.2023.
+        //poslednja izmena: 17.05.2023.
         #region Promenljive
         readonly List<string> prIme = new(); //cuva imena promenljivih
         readonly List<string> prVred = new(); //cuva vrednosti promenljivih
@@ -46,17 +48,30 @@ namespace compiler
                 n = k.Split(";");
                 #endregion
                 #region Prevodjenje
+                string com, sub;
                 for (int i = 0; i < n.Length-1; i-=-1)
                 {
                     List<string> argument = new();
                     string cmd = n[i];
                     if (cmd[0] != '%') //ako nije deklaracija promenljive
                     {
-                        cmd = cmd.Replace(")", "");
-                        string[] n2 = new string[cmd.Length];
-                        n2 = cmd.Split("(");
-                        string com = n2[0];
-                        string sub = n2[1];
+                        com = "";
+                        sub = "";
+                        bool dosloDoZagrade = false;
+                        foreach (char ch in cmd)
+                        {
+                            if (ch == '(')
+                            { 
+                                dosloDoZagrade = true;
+                            }
+                            if (!dosloDoZagrade)
+                            {
+                                com += ch.ToString();
+                            }
+                        }
+                        sub = cmd.Replace(com, "");
+                        sub = sub.Remove(0, 1);
+                        sub = sub.Remove(sub.Length - 1, 1);
                         if (sub.Contains('&')) //ako ima vise argumenata
                         {
                             string subTemp = ""; //privremena vrednost. predstavlja podargument u trenutnom ciklusu
@@ -184,11 +199,12 @@ namespace compiler
                         string tip = tipimeN[0];
                         string ime = tipimeN[1];
                         prIme.Add(ime);
+                        string vredTemp = "";
                         if (tip == "%var") // deklarisanje nove promenljive
                         {
                             if (vred.Contains('&'))
                             {
-                                string vredTemp = "";
+                                vredTemp = "";
                                 string[] podela = vred.Split('&');
                                 for (int j = 0; j < podela.Length; j++)
                                 {
@@ -211,7 +227,7 @@ namespace compiler
                                 int ind = prIme.IndexOf(ime);
                                 if (vred.Contains('&'))
                                 {
-                                    string vredTemp = "";
+                                    vredTemp = "";
                                     string[] podela = vred.Split('&');
                                     for (int j = 0; j < podela.Length; j++)
                                     {
@@ -394,6 +410,7 @@ namespace compiler
             }
             return kod;
         }
+        
         #endregion
         #region Preference
         private void bojaTekstaToolStripMenuItem_Click(object sender, EventArgs e)

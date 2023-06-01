@@ -4,6 +4,7 @@ namespace compiler
     internal class Comp
     {
         private readonly string sub;
+        string rezultat = "";
         private int arg1Int, arg2Int;
         readonly DataTable t = new();
         public Comp(string sub)
@@ -14,54 +15,54 @@ namespace compiler
         public string BinConvert() //u binarni
         {
             int dec = int.Parse(sub);
-            string bins = "";
+            rezultat = "";
             int bin;
             while (dec > 0)
             {
                 bin = dec % 2;
                 dec /= 2;
-                bins = bin.ToString() + bins;
+                rezultat = bin.ToString() + rezultat;
             }
-            return bins;
+            return rezultat;
         }
         public string OctConvert() //u oktalni
         {
             int dec = int.Parse(sub);
-            string octs = "";
+            rezultat = "";
             int oct;
             while (dec > 0)
             {
                 oct = dec % 8;
                 dec /= 8;
-                octs = oct.ToString() + octs;
+                rezultat = oct.ToString() + rezultat;
             }
-            return octs;
+            return rezultat;
         }
         public string HexConvert() //u heksa
         {
             int dec = int.Parse(sub);
-            string hexs = "";
+            rezultat = "";
             int hex;
             while (dec > 0)
             {
                 hex = dec % 16;
                 dec /= 16;
-                hexs = hex switch
+                rezultat = hex switch
                 {
-                    10 => "A" + hexs,
-                    11 => "B" + hexs,
-                    12 => "C" + hexs,
-                    13 => "D" + hexs,
-                    14 => "E" + hexs,
-                    15 => "F" + hexs,
-                    _ => hex.ToString() + hexs,
+                    10 => "A" + rezultat,
+                    11 => "B" + rezultat,
+                    12 => "C" + rezultat,
+                    13 => "D" + rezultat,
+                    14 => "E" + rezultat,
+                    15 => "F" + rezultat,
+                    _ => hex.ToString() + rezultat,
                 };
             }
-            return hexs;
+            return rezultat;
         }
         public string Convert(string arg1, string arg2) //convert sa bilo kojom bazom
         {
-            string rez="";
+            rezultat = "";
             int rezInt;
             arg1Int = (int)t.Compute(arg1, "");
             arg2Int = (int)t.Compute(arg2, "");
@@ -79,22 +80,22 @@ namespace compiler
                 {
                     broj = rezInt.ToString();
                 }
-                rez = broj + rez;
+                rezultat = broj + rezultat;
             }
-            return rez;
+            return rezultat;
         }
         public string Pow(string arg1, string arg2) //stepen
         {
-            string pow;
+            rezultat = "";
             arg1Int = (int)t.Compute(arg1, "");
             arg2Int = (int)t.Compute(arg2, "");
             double powb = Math.Pow(arg1Int, arg2Int);
-            pow = powb.ToString();
-            return pow;
+            rezultat = powb.ToString();
+            return rezultat;
         }
         public string Root(string arg1, string arg2) //koren
         {
-            string pow;
+            rezultat = "";
             arg1Int = (int)t.Compute(arg1, "");
             arg2Int = (int)t.Compute(arg2, "");
             string arg1S = arg1Int.ToString();
@@ -102,66 +103,66 @@ namespace compiler
             double arg1D = double.Parse(arg1S);
             double arg2D = 1/double.Parse(arg2S);
             double powb = Math.Pow(arg1D, arg2D);
-            pow = powb.ToString();
-            return pow;
+            rezultat = powb.ToString();
+            return rezultat;
         }
         public string Fact() //faktorijal
         {
-            string fact;
+            rezultat = "";
             int p = int.Parse(sub);
             double f = 1;
             for (int i = 1; i <= p; i++)
             {
                 f *= i;
             }
-            fact = f.ToString();
-            return fact;
+            rezultat = f.ToString();
+            return rezultat;
         }
         public string Random(string arg1, string arg2) //random
         {
-            string ran;
+            rezultat = "";
             Random R = new Random();
             arg1Int = (int)t.Compute(arg1, "");
             arg2Int = (int)t.Compute(arg2, "");
             double ranb = R.Next(arg1Int, arg2Int + 1);
-            ran = ranb.ToString();
-            return ran;
+            rezultat = ranb.ToString();
+            return rezultat;
         }
         public string Log(string arg1, string arg2) //logaritam
         {
-            string log;
+            rezultat = "";
             arg1Int = (int)t.Compute(arg1, "");
             arg2Int = (int)t.Compute(arg2, "");
             double logb = Math.Log(arg1Int, arg2Int);
-            log = logb.ToString();
-            return log;
+            rezultat = logb.ToString();
+            return rezultat;
         }
         //kraj matematickih komanda
         //string komande
         public string Count() //broji
         {
-            string cnt;
-            cnt = sub.Length.ToString();
-            return cnt;
+            rezultat = "";
+            rezultat = sub.Length.ToString();
+            return rezultat;
         }
         public string Remove(string arg1, string arg2) //brise
         {
-            string nov;
-            nov = arg1.Replace(arg2, "");
-            return nov;
+            rezultat = "";
+            rezultat = arg1.Replace(arg2, "");
+            return rezultat;
         }
         public int Ascii() //ascii
         {
-            return (int)sub[0];
+            return sub[0];
         }
         public string Back() //unazad
         {
-            string back = "";
+            rezultat = "";
             for (int i = 0; i < sub.Length; i++)
             {
-                back = sub[i] + back;
+                rezultat = sub[i] + rezultat;
             }
-            return back;
+            return rezultat;
         }
         public string ToUpper() //pretvara u velika slova
         {
@@ -173,30 +174,30 @@ namespace compiler
         }
         public string RemoveCount(string arg1, string arg2) //brise prvih n slova
         {
-            string nov;
+            rezultat = "";
             arg2Int = (int)t.Compute(arg2, "");
-            nov = arg1.Remove(0, arg2Int);
-            return nov;
+            rezultat = arg1.Remove(0, arg2Int);
+            return rezultat;
         }
         public string WriteFor(string arg1, string arg2) //ispisuje vise puta
         {
-            string nov = "";
+            rezultat = "";
             arg2Int = (int)t.Compute(arg2, "");
             for (int i = 0; i < arg2Int; i++)
             {
-                nov += arg1;
+                rezultat += arg1;
             }
-            return nov;
+            return rezultat;
         }
         public string WriteLineFor(string arg1, string arg2) //ispisuje i dodaje novi red vise puta
         {
-            string nov = "";
+            rezultat = "";
             arg2Int = (int)t.Compute(arg2, "");
             for (int i = 0; i < arg2Int; i++)
             {
-                nov += arg1 + "\n";
+                rezultat += arg1 + "\n";
             }
-            return nov;
+            return rezultat;
         }
         public void MsgBox(string arg1, string arg2)
         {

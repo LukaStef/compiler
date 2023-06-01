@@ -1,4 +1,5 @@
-﻿using System.Media;namespace compiler
+﻿using System.Media;
+namespace compiler
 {
     public partial class Info : Form
     {
@@ -21,6 +22,17 @@
         private void linkLabel1_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
         {
             var url = "https://www.lukastefanovic.com/";
+            var psi = new System.Diagnostics.ProcessStartInfo
+            {
+                UseShellExecute = true,
+                FileName = url
+            };
+            System.Diagnostics.Process.Start(psi);
+        }
+
+        private void linkLabel2_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+            var url = "https://github.com/LukaStef/compiler";
             var psi = new System.Diagnostics.ProcessStartInfo
             {
                 UseShellExecute = true,

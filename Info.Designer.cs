@@ -29,295 +29,296 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Info));
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.panel1 = new System.Windows.Forms.Panel();
-            this.panel3 = new System.Windows.Forms.Panel();
-            this.panel2 = new System.Windows.Forms.Panel();
-            this.label1 = new System.Windows.Forms.Label();
-            this.panel4 = new System.Windows.Forms.Panel();
-            this.panel6 = new System.Windows.Forms.Panel();
-            this.linkLabel1 = new System.Windows.Forms.LinkLabel();
-            this.panel5 = new System.Windows.Forms.Panel();
-            this.label2 = new System.Windows.Forms.Label();
-            this.panel7 = new System.Windows.Forms.Panel();
-            this.panel8 = new System.Windows.Forms.Panel();
-            this.label4 = new System.Windows.Forms.Label();
-            this.panel9 = new System.Windows.Forms.Panel();
-            this.label5 = new System.Windows.Forms.Label();
-            this.panel10 = new System.Windows.Forms.Panel();
-            this.panel11 = new System.Windows.Forms.Panel();
-            this.label6 = new System.Windows.Forms.Label();
-            this.panel12 = new System.Windows.Forms.Panel();
-            this.label7 = new System.Windows.Forms.Label();
-            this.button2 = new System.Windows.Forms.Button();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
-            this.panel1.SuspendLayout();
-            this.panel2.SuspendLayout();
-            this.panel4.SuspendLayout();
-            this.panel6.SuspendLayout();
-            this.panel7.SuspendLayout();
-            this.panel8.SuspendLayout();
-            this.panel10.SuspendLayout();
-            this.panel11.SuspendLayout();
-            this.SuspendLayout();
+            pictureBox1 = new PictureBox();
+            panel1 = new Panel();
+            panel3 = new Panel();
+            panel2 = new Panel();
+            label1 = new Label();
+            panel4 = new Panel();
+            panel6 = new Panel();
+            linkLabel1 = new LinkLabel();
+            panel5 = new Panel();
+            label2 = new Label();
+            panel7 = new Panel();
+            panel8 = new Panel();
+            label4 = new Label();
+            panel9 = new Panel();
+            label5 = new Label();
+            panel10 = new Panel();
+            panel11 = new Panel();
+            linkLabel2 = new LinkLabel();
+            panel12 = new Panel();
+            label7 = new Label();
+            button2 = new Button();
+            ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
+            panel1.SuspendLayout();
+            panel2.SuspendLayout();
+            panel4.SuspendLayout();
+            panel6.SuspendLayout();
+            panel7.SuspendLayout();
+            panel8.SuspendLayout();
+            panel10.SuspendLayout();
+            panel11.SuspendLayout();
+            SuspendLayout();
             // 
             // pictureBox1
             // 
-            this.pictureBox1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.pictureBox1.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(3, 3);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(87, 51);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox1.TabIndex = 4;
-            this.pictureBox1.TabStop = false;
-            this.pictureBox1.Click += new System.EventHandler(this.pictureBox1_Click);
+            pictureBox1.BorderStyle = BorderStyle.FixedSingle;
+            pictureBox1.Cursor = Cursors.Hand;
+            pictureBox1.Image = (Image)resources.GetObject("pictureBox1.Image");
+            pictureBox1.Location = new Point(3, 3);
+            pictureBox1.Name = "pictureBox1";
+            pictureBox1.Size = new Size(87, 51);
+            pictureBox1.SizeMode = PictureBoxSizeMode.StretchImage;
+            pictureBox1.TabIndex = 4;
+            pictureBox1.TabStop = false;
+            pictureBox1.Click += pictureBox1_Click;
             // 
             // panel1
             // 
-            this.panel1.BackColor = System.Drawing.Color.Lime;
-            this.panel1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panel1.Controls.Add(this.panel3);
-            this.panel1.Controls.Add(this.panel2);
-            this.panel1.Location = new System.Drawing.Point(96, 3);
-            this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(161, 51);
-            this.panel1.TabIndex = 5;
+            panel1.BackColor = Color.Lime;
+            panel1.BorderStyle = BorderStyle.FixedSingle;
+            panel1.Controls.Add(panel3);
+            panel1.Controls.Add(panel2);
+            panel1.Location = new Point(96, 3);
+            panel1.Name = "panel1";
+            panel1.Size = new Size(161, 51);
+            panel1.TabIndex = 5;
             // 
             // panel3
             // 
-            this.panel3.BackColor = System.Drawing.Color.Lime;
-            this.panel3.Location = new System.Drawing.Point(-1, 36);
-            this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(161, 2);
-            this.panel3.TabIndex = 6;
+            panel3.BackColor = Color.Lime;
+            panel3.Location = new Point(-1, 36);
+            panel3.Name = "panel3";
+            panel3.Size = new Size(161, 2);
+            panel3.TabIndex = 6;
             // 
             // panel2
             // 
-            this.panel2.BackColor = System.Drawing.Color.Black;
-            this.panel2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panel2.Controls.Add(this.label1);
-            this.panel2.Location = new System.Drawing.Point(1, 1);
-            this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(157, 47);
-            this.panel2.TabIndex = 6;
+            panel2.BackColor = Color.Black;
+            panel2.BorderStyle = BorderStyle.FixedSingle;
+            panel2.Controls.Add(label1);
+            panel2.Location = new Point(1, 1);
+            panel2.Name = "panel2";
+            panel2.Size = new Size(157, 47);
+            panel2.TabIndex = 6;
             // 
             // label1
             // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Source Code Pro Semibold", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.label1.ForeColor = System.Drawing.Color.Lime;
-            this.label1.Location = new System.Drawing.Point(1, 3);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(153, 24);
-            this.label1.TabIndex = 6;
-            this.label1.Text = "LPPL Compiler";
+            label1.AutoSize = true;
+            label1.Font = new Font("Source Code Pro Semibold", 14.25F, FontStyle.Bold, GraphicsUnit.Point);
+            label1.ForeColor = Color.Lime;
+            label1.Location = new Point(1, 3);
+            label1.Name = "label1";
+            label1.Size = new Size(153, 24);
+            label1.TabIndex = 6;
+            label1.Text = "LPPL Compiler";
             // 
             // panel4
             // 
-            this.panel4.BackColor = System.Drawing.Color.Lime;
-            this.panel4.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panel4.Controls.Add(this.panel6);
-            this.panel4.Location = new System.Drawing.Point(3, 60);
-            this.panel4.Name = "panel4";
-            this.panel4.Size = new System.Drawing.Size(254, 69);
-            this.panel4.TabIndex = 7;
+            panel4.BackColor = Color.Lime;
+            panel4.BorderStyle = BorderStyle.FixedSingle;
+            panel4.Controls.Add(panel6);
+            panel4.Location = new Point(3, 60);
+            panel4.Name = "panel4";
+            panel4.Size = new Size(254, 69);
+            panel4.TabIndex = 7;
             // 
             // panel6
             // 
-            this.panel6.BackColor = System.Drawing.Color.Black;
-            this.panel6.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panel6.Controls.Add(this.linkLabel1);
-            this.panel6.Controls.Add(this.panel5);
-            this.panel6.Controls.Add(this.label2);
-            this.panel6.Location = new System.Drawing.Point(1, 1);
-            this.panel6.Name = "panel6";
-            this.panel6.Size = new System.Drawing.Size(250, 65);
-            this.panel6.TabIndex = 6;
+            panel6.BackColor = Color.Black;
+            panel6.BorderStyle = BorderStyle.FixedSingle;
+            panel6.Controls.Add(linkLabel1);
+            panel6.Controls.Add(panel5);
+            panel6.Controls.Add(label2);
+            panel6.Location = new Point(1, 1);
+            panel6.Name = "panel6";
+            panel6.Size = new Size(250, 65);
+            panel6.TabIndex = 6;
             // 
             // linkLabel1
             // 
-            this.linkLabel1.AutoSize = true;
-            this.linkLabel1.Font = new System.Drawing.Font("Source Code Pro", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.linkLabel1.LinkColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
-            this.linkLabel1.Location = new System.Drawing.Point(3, 39);
-            this.linkLabel1.Name = "linkLabel1";
-            this.linkLabel1.Size = new System.Drawing.Size(159, 20);
-            this.linkLabel1.TabIndex = 8;
-            this.linkLabel1.TabStop = true;
-            this.linkLabel1.Text = "Luka Stefanovic";
-            this.linkLabel1.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.linkLabel1_LinkClicked);
+            linkLabel1.AutoSize = true;
+            linkLabel1.Font = new Font("Source Code Pro", 12F, FontStyle.Regular, GraphicsUnit.Point);
+            linkLabel1.LinkColor = Color.FromArgb(192, 255, 192);
+            linkLabel1.Location = new Point(3, 39);
+            linkLabel1.Name = "linkLabel1";
+            linkLabel1.Size = new Size(159, 20);
+            linkLabel1.TabIndex = 8;
+            linkLabel1.TabStop = true;
+            linkLabel1.Text = "Luka Stefanovic";
+            linkLabel1.LinkClicked += linkLabel1_LinkClicked;
             // 
             // panel5
             // 
-            this.panel5.BackColor = System.Drawing.Color.Lime;
-            this.panel5.Location = new System.Drawing.Point(1, 27);
-            this.panel5.Name = "panel5";
-            this.panel5.Size = new System.Drawing.Size(246, 2);
-            this.panel5.TabIndex = 7;
+            panel5.BackColor = Color.Lime;
+            panel5.Location = new Point(1, 27);
+            panel5.Name = "panel5";
+            panel5.Size = new Size(246, 2);
+            panel5.TabIndex = 7;
             // 
             // label2
             // 
-            this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Source Code Pro", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label2.ForeColor = System.Drawing.Color.Lime;
-            this.label2.Location = new System.Drawing.Point(3, 0);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(76, 24);
-            this.label2.TabIndex = 6;
-            this.label2.Text = "Autor:";
+            label2.AutoSize = true;
+            label2.Font = new Font("Source Code Pro", 14F, FontStyle.Regular, GraphicsUnit.Point);
+            label2.ForeColor = Color.Lime;
+            label2.Location = new Point(3, 0);
+            label2.Name = "label2";
+            label2.Size = new Size(76, 24);
+            label2.TabIndex = 6;
+            label2.Text = "Autor:";
             // 
             // panel7
             // 
-            this.panel7.BackColor = System.Drawing.Color.Lime;
-            this.panel7.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panel7.Controls.Add(this.panel8);
-            this.panel7.Location = new System.Drawing.Point(3, 129);
-            this.panel7.Name = "panel7";
-            this.panel7.Size = new System.Drawing.Size(254, 69);
-            this.panel7.TabIndex = 8;
+            panel7.BackColor = Color.Lime;
+            panel7.BorderStyle = BorderStyle.FixedSingle;
+            panel7.Controls.Add(panel8);
+            panel7.Location = new Point(3, 129);
+            panel7.Name = "panel7";
+            panel7.Size = new Size(254, 69);
+            panel7.TabIndex = 8;
             // 
             // panel8
             // 
-            this.panel8.BackColor = System.Drawing.Color.Black;
-            this.panel8.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panel8.Controls.Add(this.label4);
-            this.panel8.Controls.Add(this.panel9);
-            this.panel8.Controls.Add(this.label5);
-            this.panel8.Location = new System.Drawing.Point(1, 1);
-            this.panel8.Name = "panel8";
-            this.panel8.Size = new System.Drawing.Size(250, 65);
-            this.panel8.TabIndex = 6;
+            panel8.BackColor = Color.Black;
+            panel8.BorderStyle = BorderStyle.FixedSingle;
+            panel8.Controls.Add(label4);
+            panel8.Controls.Add(panel9);
+            panel8.Controls.Add(label5);
+            panel8.Location = new Point(1, 1);
+            panel8.Name = "panel8";
+            panel8.Size = new Size(250, 65);
+            panel8.TabIndex = 6;
             // 
             // label4
             // 
-            this.label4.AutoSize = true;
-            this.label4.Font = new System.Drawing.Font("Source Code Pro", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label4.ForeColor = System.Drawing.Color.Lime;
-            this.label4.Location = new System.Drawing.Point(3, 39);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(119, 20);
-            this.label4.TabIndex = 8;
-            this.label4.Text = "17.05.2023.";
+            label4.AutoSize = true;
+            label4.Font = new Font("Source Code Pro", 12F, FontStyle.Regular, GraphicsUnit.Point);
+            label4.ForeColor = Color.Lime;
+            label4.Location = new Point(3, 39);
+            label4.Name = "label4";
+            label4.Size = new Size(69, 20);
+            label4.TabIndex = 8;
+            label4.Text = "1.13.4";
             // 
             // panel9
             // 
-            this.panel9.BackColor = System.Drawing.Color.Lime;
-            this.panel9.Location = new System.Drawing.Point(1, 27);
-            this.panel9.Name = "panel9";
-            this.panel9.Size = new System.Drawing.Size(246, 2);
-            this.panel9.TabIndex = 7;
+            panel9.BackColor = Color.Lime;
+            panel9.Location = new Point(1, 27);
+            panel9.Name = "panel9";
+            panel9.Size = new Size(246, 2);
+            panel9.TabIndex = 7;
             // 
             // label5
             // 
-            this.label5.AutoSize = true;
-            this.label5.Font = new System.Drawing.Font("Source Code Pro", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label5.ForeColor = System.Drawing.Color.Lime;
-            this.label5.Location = new System.Drawing.Point(3, 0);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(197, 24);
-            this.label5.TabIndex = 6;
-            this.label5.Text = "Trenutna verzija:";
+            label5.AutoSize = true;
+            label5.Font = new Font("Source Code Pro", 14F, FontStyle.Regular, GraphicsUnit.Point);
+            label5.ForeColor = Color.Lime;
+            label5.Location = new Point(3, 0);
+            label5.Name = "label5";
+            label5.Size = new Size(197, 24);
+            label5.TabIndex = 6;
+            label5.Text = "Trenutna verzija:";
             // 
             // panel10
             // 
-            this.panel10.BackColor = System.Drawing.Color.Lime;
-            this.panel10.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panel10.Controls.Add(this.panel11);
-            this.panel10.Location = new System.Drawing.Point(3, 198);
-            this.panel10.Name = "panel10";
-            this.panel10.Size = new System.Drawing.Size(254, 69);
-            this.panel10.TabIndex = 9;
+            panel10.BackColor = Color.Lime;
+            panel10.BorderStyle = BorderStyle.FixedSingle;
+            panel10.Controls.Add(panel11);
+            panel10.Location = new Point(3, 198);
+            panel10.Name = "panel10";
+            panel10.Size = new Size(254, 69);
+            panel10.TabIndex = 9;
             // 
             // panel11
             // 
-            this.panel11.BackColor = System.Drawing.Color.Black;
-            this.panel11.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panel11.Controls.Add(this.label6);
-            this.panel11.Controls.Add(this.panel12);
-            this.panel11.Controls.Add(this.label7);
-            this.panel11.Location = new System.Drawing.Point(1, 1);
-            this.panel11.Name = "panel11";
-            this.panel11.Size = new System.Drawing.Size(250, 65);
-            this.panel11.TabIndex = 6;
+            panel11.BackColor = Color.Black;
+            panel11.BorderStyle = BorderStyle.FixedSingle;
+            panel11.Controls.Add(linkLabel2);
+            panel11.Controls.Add(panel12);
+            panel11.Controls.Add(label7);
+            panel11.Location = new Point(1, 1);
+            panel11.Name = "panel11";
+            panel11.Size = new Size(250, 65);
+            panel11.TabIndex = 6;
             // 
-            // label6
+            // linkLabel2
             // 
-            this.label6.AutoSize = true;
-            this.label6.Font = new System.Drawing.Font("Source Code Pro", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label6.ForeColor = System.Drawing.Color.Lime;
-            this.label6.Location = new System.Drawing.Point(3, 39);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(119, 20);
-            this.label6.TabIndex = 8;
-            this.label6.Text = "20.01.2023.";
+            linkLabel2.AutoSize = true;
+            linkLabel2.Font = new Font("Source Code Pro", 12F, FontStyle.Regular, GraphicsUnit.Point);
+            linkLabel2.LinkColor = Color.FromArgb(192, 255, 192);
+            linkLabel2.Location = new Point(3, 39);
+            linkLabel2.Name = "linkLabel2";
+            linkLabel2.Size = new Size(69, 20);
+            linkLabel2.TabIndex = 9;
+            linkLabel2.TabStop = true;
+            linkLabel2.Text = "GitHub";
+            linkLabel2.LinkClicked += linkLabel2_LinkClicked;
             // 
             // panel12
             // 
-            this.panel12.BackColor = System.Drawing.Color.Lime;
-            this.panel12.Location = new System.Drawing.Point(1, 27);
-            this.panel12.Name = "panel12";
-            this.panel12.Size = new System.Drawing.Size(246, 2);
-            this.panel12.TabIndex = 7;
+            panel12.BackColor = Color.Lime;
+            panel12.Location = new Point(1, 27);
+            panel12.Name = "panel12";
+            panel12.Size = new Size(246, 2);
+            panel12.TabIndex = 7;
             // 
             // label7
             // 
-            this.label7.AutoSize = true;
-            this.label7.Font = new System.Drawing.Font("Source Code Pro", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label7.ForeColor = System.Drawing.Color.Lime;
-            this.label7.Location = new System.Drawing.Point(3, 0);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(153, 24);
-            this.label7.TabIndex = 6;
-            this.label7.Text = "Prva verzija:";
+            label7.AutoSize = true;
+            label7.Font = new Font("Source Code Pro", 14F, FontStyle.Regular, GraphicsUnit.Point);
+            label7.ForeColor = Color.Lime;
+            label7.Location = new Point(3, 0);
+            label7.Name = "label7";
+            label7.Size = new Size(76, 24);
+            label7.TabIndex = 6;
+            label7.Text = "GitHub";
             // 
             // button2
             // 
-            this.button2.BackColor = System.Drawing.Color.White;
-            this.button2.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.button2.Location = new System.Drawing.Point(3, 273);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(254, 42);
-            this.button2.TabIndex = 11;
-            this.button2.Text = "Zatvori";
-            this.button2.UseVisualStyleBackColor = false;
-            this.button2.Click += new System.EventHandler(this.button2_Click);
+            button2.BackColor = Color.White;
+            button2.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
+            button2.Location = new Point(3, 273);
+            button2.Name = "button2";
+            button2.Size = new Size(254, 42);
+            button2.TabIndex = 11;
+            button2.Text = "Zatvori";
+            button2.UseVisualStyleBackColor = false;
+            button2.Click += button2_Click;
             // 
             // Info
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.Black;
-            this.ClientSize = new System.Drawing.Size(260, 322);
-            this.Controls.Add(this.button2);
-            this.Controls.Add(this.panel10);
-            this.Controls.Add(this.panel7);
-            this.Controls.Add(this.panel4);
-            this.Controls.Add(this.panel1);
-            this.Controls.Add(this.pictureBox1);
-            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
-            this.MaximizeBox = false;
-            this.MaximumSize = new System.Drawing.Size(276, 361);
-            this.MinimizeBox = false;
-            this.MinimumSize = new System.Drawing.Size(276, 361);
-            this.Name = "Info";
-            this.Text = "Informacija";
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
-            this.panel1.ResumeLayout(false);
-            this.panel2.ResumeLayout(false);
-            this.panel2.PerformLayout();
-            this.panel4.ResumeLayout(false);
-            this.panel6.ResumeLayout(false);
-            this.panel6.PerformLayout();
-            this.panel7.ResumeLayout(false);
-            this.panel8.ResumeLayout(false);
-            this.panel8.PerformLayout();
-            this.panel10.ResumeLayout(false);
-            this.panel11.ResumeLayout(false);
-            this.panel11.PerformLayout();
-            this.ResumeLayout(false);
-
+            AutoScaleDimensions = new SizeF(7F, 15F);
+            AutoScaleMode = AutoScaleMode.Font;
+            BackColor = Color.Black;
+            ClientSize = new Size(260, 322);
+            Controls.Add(button2);
+            Controls.Add(panel10);
+            Controls.Add(panel7);
+            Controls.Add(panel4);
+            Controls.Add(panel1);
+            Controls.Add(pictureBox1);
+            Icon = (Icon)resources.GetObject("$this.Icon");
+            MaximizeBox = false;
+            MaximumSize = new Size(276, 361);
+            MinimizeBox = false;
+            MinimumSize = new Size(276, 361);
+            Name = "Info";
+            Text = "Informacija";
+            ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
+            panel1.ResumeLayout(false);
+            panel2.ResumeLayout(false);
+            panel2.PerformLayout();
+            panel4.ResumeLayout(false);
+            panel6.ResumeLayout(false);
+            panel6.PerformLayout();
+            panel7.ResumeLayout(false);
+            panel8.ResumeLayout(false);
+            panel8.PerformLayout();
+            panel10.ResumeLayout(false);
+            panel11.ResumeLayout(false);
+            panel11.PerformLayout();
+            ResumeLayout(false);
         }
 
         #endregion
@@ -338,10 +339,10 @@
         private Label label5;
         private Panel panel10;
         private Panel panel11;
-        private Label label6;
         private Panel panel12;
         private Label label7;
         private Button button2;
         private LinkLabel linkLabel1;
+        private LinkLabel linkLabel2;
     }
 }
